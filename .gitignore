@@ -34,9 +34,6 @@
 *.synctex.gz(busy)
 *.pdfsync
 
-# LaTeXmk
-*.fdb_latexmk
-
 # Glossaries
 *.acn
 *.acr
@@ -95,10 +92,6 @@ _minted*
 *.sagetex.sage
 *.sagetex.py
 *.sagetex.scmd
-
-# SyncTeX
-*.synctex.gz
-*.synctex.gz(busy)
 
 # Sympy
 *.sout
