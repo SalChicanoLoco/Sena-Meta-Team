@@ -61,9 +61,6 @@
 # Knitr
 *-concordance.tex
 
-# TODO notes
-*.tdo
-
 # Index files
 *.idx
 *.ilg
@@ -91,16 +88,8 @@ _minted*
 # Morewrites
 *.mw
 
-# Nomencl
-*.nlg
-*.nlo
-*.nls
-
 # Pax
 *.pax
-
-# PdfTeX
-*.pdf
 
 # Sagetex
 *.sagetex.sage
@@ -121,9 +110,6 @@ sympy-plots-for-*.tex/
 *.md5
 *.auxlock
 
-# Todonotes
-*.tdo
-
 # Xindy
 *.xdy
 
@@ -138,15 +124,17 @@ sympy-plots-for-*.tex/
 # Latexian
 TSWLatexianTemp*
 
+# TODO notes and other temporary files
+*.tdo
+*~
+
 # Editor-specific files
 ## Vim
 *.swp
 *.swo
-*~
 .*.sw?
 
 ## Emacs
-*~
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
@@ -184,9 +172,6 @@ Desktop.ini
 $RECYCLE.BIN/
 *.lnk
 
-## Linux
-*~
-
 # KBibTeX
 *~[0-9]*
 
@@ -216,6 +201,7 @@ output/
 # *.sty
 # *.cls
 
-# Final PDFs (uncomment if you want to track PDF outputs)
-# Comment out the line below if you want to commit final PDFs
-# *.pdf
+# Final PDFs
+# By default, PDF outputs are ignored. Uncomment the line below to track PDFs in Git
+# (useful for sharing compiled outputs, but note that PDFs are binary files)
+*.pdf
