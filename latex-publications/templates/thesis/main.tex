@@ -1,0 +1,171 @@
+\documentclass[12pt,a4paper,twoside,openright]{report}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% Page layout
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+
+% Citations and bibliography
+\usepackage{cite}
+
+% Hyperlinks
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Chapter and section formatting
+\usepackage{titlesec}
+
+% Custom commands
+\newcommand{\email}[1]{\texttt{#1}}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO: #1}}}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+
+% Document metadata
+\title{Your Thesis Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+% Front matter
+\frontmatter
+
+% Title page
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Huge\bfseries Your Thesis Title\par}
+\vspace{2cm}
+
+{\Large\itshape Your Name\par}
+\vspace{2cm}
+
+{\large A thesis submitted in partial fulfillment of the requirements for the degree of\par}
+\vspace{1cm}
+
+{\Large Doctor of Philosophy\par}
+\vspace{1cm}
+
+{\large in\par}
+\vspace{0.5cm}
+
+{\Large Your Department\par}
+\vspace{2cm}
+
+{\large Your Institution\par}
+\vspace{0.5cm}
+
+{\large City, Country\par}
+\vspace{1cm}
+
+{\large \today\par}
+
+\vfill
+\end{titlepage}
+
+% Abstract
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This is the abstract of your thesis. It should provide a comprehensive summary of your research, including the problem statement, methodology, key findings, and conclusions. The abstract typically ranges from 300 to 500 words for a thesis.
+
+% Declaration
+\chapter*{Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+I hereby declare that this thesis is my own work and effort and that it has not been submitted anywhere for any award. Where other sources of information have been used, they have been acknowledged.
+
+\vspace{2cm}
+\noindent
+Signature: \hrulefill
+
+\noindent
+Date: \hrulefill
+
+% Acknowledgments
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+I would like to express my sincere gratitude to all those who supported me during this research. [Add your acknowledgments here]
+
+% Table of contents
+\tableofcontents
+
+% List of figures
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+% List of tables
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+% Main matter
+\mainmatter
+
+% Include chapters
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}
+
+% Back matter
+\backmatter
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{references}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+% Appendices
+\appendix
+\chapter{Additional Material}
+\label{app:additional}
+
+Additional material, supplementary data, or detailed proofs can be included in appendices.
+
+\chapter{Source Code}
+\label{app:code}
+
+If applicable, include source code or additional technical details here.
+
+\end{document}

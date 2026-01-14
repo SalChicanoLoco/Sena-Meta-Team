@@ -1,0 +1,262 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Theme selection
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% Custom colors (optional)
+% \definecolor{myblue}{RGB}{0,82,155}
+% \setbeamercolor{structure}{fg=myblue}
+
+% Title page information
+\title{Your Presentation Title}
+\subtitle{Optional Subtitle}
+\author{Your Name}
+\institute{Your Institution \\ Your Department}
+\date{\today}
+
+% Footer customization
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+\titlepage
+\end{frame}
+
+% Outline
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+% Section 1
+\section{Introduction}
+
+\begin{frame}{Introduction}
+\begin{itemize}
+    \item Introduce your topic
+    \item Provide context and background
+    \item State the problem or research question
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Motivation}
+\begin{block}{Why is this important?}
+Explain the significance of your work and why the audience should care.
+\end{block}
+
+\begin{itemize}
+    \item Key point 1
+    \item Key point 2
+    \item Key point 3
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Research Questions}
+\begin{enumerate}
+    \item First research question
+    \item Second research question
+    \item Third research question
+\end{enumerate}
+\end{frame}
+
+% Section 2
+\section{Background}
+
+\begin{frame}{Background}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Key Concept 1}
+\begin{itemize}
+    \item Detail 1
+    \item Detail 2
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Key Concept 2}
+\begin{itemize}
+    \item Detail 1
+    \item Detail 2
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Related Work}
+\begin{table}
+\centering
+\begin{tabular}{lcc}
+\toprule
+Approach & Metric 1 & Metric 2 \\
+\midrule
+Method A & 0.85 & 0.78 \\
+Method B & 0.87 & 0.80 \\
+\textbf{Our Method} & \textbf{0.92} & \textbf{0.85} \\
+\bottomrule
+\end{tabular}
+\caption{Comparison with existing methods}
+\end{table}
+\end{frame}
+
+% Section 3
+\section{Methodology}
+
+\begin{frame}{Proposed Approach}
+\begin{itemize}
+    \item Component 1: Description
+    \item Component 2: Description
+    \item Component 3: Description
+\end{itemize}
+
+\begin{center}
+% Uncomment when you have a figure
+% \includegraphics[width=0.6\textwidth]{figures/approach-diagram.pdf}
+\fbox{\parbox{0.6\textwidth}{\centering [Your diagram will be placed here]}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Mathematical Formulation}
+Consider the optimization problem:
+
+\begin{equation}
+\min_{x} f(x) \quad \text{subject to} \quad g(x) \leq 0
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item $f(x)$ is the objective function
+    \item $g(x)$ represents constraints
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Implementation}
+\begin{block}{Key Implementation Details}
+\begin{enumerate}
+    \item Step 1: Data preprocessing
+    \item Step 2: Model training
+    \item Step 3: Evaluation
+\end{enumerate}
+\end{block}
+\end{frame}
+
+% Section 4
+\section{Results}
+
+\begin{frame}{Experimental Setup}
+\begin{itemize}
+    \item \textbf{Datasets}: Description of datasets used
+    \item \textbf{Metrics}: Evaluation metrics
+    \item \textbf{Baselines}: Comparison methods
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Main Results}
+\begin{center}
+% Uncomment when you have a figure
+% \includegraphics[width=0.8\textwidth]{figures/results-chart.pdf}
+\fbox{\parbox{0.8\textwidth}{\centering [Your results chart will be placed here]}}
+\end{center}
+
+\begin{itemize}
+    \item Our method achieves X\% improvement
+    \item Significant in Y metric
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Detailed Analysis}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Strengths}
+\begin{itemize}
+    \item[+] Advantage 1
+    \item[+] Advantage 2
+    \item[+] Advantage 3
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Limitations}
+\begin{itemize}
+    \item[-] Limitation 1
+    \item[-] Limitation 2
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% Section 5
+\section{Conclusion}
+
+\begin{frame}{Summary}
+\begin{block}{Key Takeaways}
+\begin{enumerate}
+    \item Main finding 1
+    \item Main finding 2
+    \item Main finding 3
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}{Contributions}
+\begin{itemize}
+    \item \textbf{Contribution 1}: Brief description
+    \item \textbf{Contribution 2}: Brief description
+    \item \textbf{Contribution 3}: Brief description
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Future Work}
+\begin{enumerate}
+    \item Extend the approach to...
+    \item Investigate the impact of...
+    \item Apply the method to...
+\end{enumerate}
+\end{frame}
+
+% Thank you slide
+\begin{frame}[plain]
+\centering
+\Huge Thank You!
+
+\vspace{1cm}
+
+\Large Questions?
+
+\vspace{1cm}
+
+\normalsize
+\texttt{your.email@institution.edu}
+\end{frame}
+
+% References slide (optional)
+\begin{frame}[allowframebreaks]{References}
+\tiny
+\begin{thebibliography}{99}
+\bibitem{ref1} Author, A. (2023). Title of paper. \textit{Journal Name}, 10(2), 123-145.
+\bibitem{ref2} Author, B. (2022). Title of book. Publisher.
+% Add more references as needed
+\end{thebibliography}
+\end{frame}
+
+\end{document}

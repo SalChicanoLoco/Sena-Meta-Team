@@ -1,0 +1,53 @@
+% Common LaTeX Macros and Custom Commands
+% Include this file in your document with: \input{../common/macros}
+
+% Mathematical notation shortcuts
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+% Probability and Statistics
+\newcommand{\Prob}[1]{\mathbb{P}\left(#1\right)}
+\newcommand{\Expect}[1]{\mathbb{E}\left[#1\right]}
+\newcommand{\Var}[1]{\text{Var}\left(#1\right)}
+\newcommand{\Cov}[1]{\text{Cov}\left(#1\right)}
+
+% Linear Algebra
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\inner}[2]{\langle #1, #2 \rangle}
+\newcommand{\trace}[1]{\text{tr}\left(#1\right)}
+
+% Calculus
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\diff}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+
+% Sets and Logic
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\given}{\mid}
+\newcommand{\suchthat}{\mid}
+
+% Complexity Classes
+\newcommand{\bigO}[1]{\mathcal{O}\left(#1\right)}
+\newcommand{\littleo}[1]{o\left(#1\right)}
+\newcommand{\bigOmega}[1]{\Omega\left(#1\right)}
+\newcommand{\bigTheta}[1]{\Theta\left(#1\right)}
+
+% Common abbreviations
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\etc}{\textit{etc.}}
+\newcommand{\etal}{\textit{et al.}}
+
+% Formatting helpers
+\newcommand{\term}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\package}[1]{\texttt{#1}}
+
+% Custom environments (optional - uncomment if needed)
+% \newenvironment{claim}[1]{\begin{quote}\textbf{Claim #1:}}{\end{quote}}
+% \newenvironment{proof}{\begin{quote}\textit{Proof:}}{\qed\end{quote}}
