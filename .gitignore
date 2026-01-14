@@ -128,13 +128,13 @@ TSWLatexianTemp*
 .*.sw?
 
 ## Emacs
-\#*\#
+#*#
 /.emacs.desktop
 /.emacs.desktop.lock
 *.elc
 auto-save-list
 tramp
-.\#*
+.#*
 
 ## VS Code
 .vscode/
